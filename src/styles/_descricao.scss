@@ -1,0 +1,81 @@
+.descricao{
+    &__ul{
+        &__item1{
+            display: flex;
+            &__img1{
+                width: 300px;
+            }
+            &__text{
+                text-align: justify;
+                padding-top: 10vw;
+                font-size: 25px;
+                padding-left: 10px;
+            }
+        }
+        &__item2{
+            display: flex;
+            flex-direction: row-reverse;
+            &__img2{
+                width: 450px;
+            }
+            &__text{
+                text-align: justify;
+                padding-top: 10vw;
+                font-size: 25px;
+            }
+        }
+        
+    }
+        @media (min-width:320px) and (max-width:640px) {
+            &__ul{
+                &__item1{
+                    &__img1{
+                        margin-top: 20px;
+                        width: 200px;
+                        height: 100px;
+                    }
+                    &__text{
+                        font-size: 12px;
+                    }
+                }
+                &__item2{
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                    &__img2{
+                        margin-top: 20px;
+                        width: 200px;
+                        height: 100px;
+                    }
+                    &__text{
+                        font-size: 12px;
+                    }
+                }
+        }
+    }
+    @media (min-width:641px)and (max-width:800px) {
+        &__ul{
+            &__item1{
+                &__img1{
+                    margin-top: 20px;
+                    width: 200px;
+                    height: 150px;
+                }
+                &__text{
+                    font-size: 15px;
+                }
+            }
+            &__item2{
+                margin-top: 50px;
+                margin-bottom: 50px;
+                &__img2{
+                    margin-top: 20px;
+                    width: 200px;
+                    height: 150px;
+                }
+                &__text{
+                    font-size: 15px;
+                }
+            }
+    }
+    }
+}

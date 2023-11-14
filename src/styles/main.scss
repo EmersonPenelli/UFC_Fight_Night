@@ -1,0 +1,29 @@
+@use 'header';
+@use 'descricao';
+@use 'footer';
+
+html, body {
+    overflow-x: hidden;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+.container{
+    width: 980px;
+    margin: auto;
+
+    @media (max-width:640px){
+        max-width: 80%;
+    }
+
+    @media (max-width:1024px){
+        max-width: 90%;
+    }
+}
